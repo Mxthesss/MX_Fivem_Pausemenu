@@ -25,7 +25,7 @@ end
 
 Citizen.CreateThread(function() 
 	while true do
-		Citizen.Wait(100)
+		Citizen.Wait(1000)
 		SetData()
 	end
 end)

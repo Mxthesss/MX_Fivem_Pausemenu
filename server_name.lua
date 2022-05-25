@@ -1,3 +1,14 @@
+local config = {
+    ["MAP"] = "New Name For Map",
+    ["STATUS"] = "New Name for Status",
+    ["GAME"] = "New Name for Game",
+    ["INFO"] = "New Name for Info",
+    ["SETTINGS"] = "New Name for Settings",
+    ["R*EDITOR"] = "New Name for Rockstar Editor"
+    ["GALLERY"] = "New Name for Gallery"
+}
+
+
 function SetData()
 	players = {}
 	for _, player in ipairs(GetActivePlayers()) do
@@ -26,3 +37,16 @@ end)
 Citizen.CreateThread(function()
     AddTextEntry("PM_PANE_QUIT", "~r~Close your ~o~Eyes Forever 🐌")
 end)
+
+Citizen.CreateThread(function()
+    AddTextEntry('PM_SCR_MAP', config["MAP"])
+    AddTextEntry('PM_SCR_STA', config["STATUS"])
+    AddTextEntry('PM_SCR_GAM', config["GAME"])
+    AddTextEntry('PM_SCR_INF', config["INFO"])
+    AddTextEntry('PM_SCR_SET', config["SETTINGS"])
+    AddTextEntry('PM_SCR_RPL', config["R*EDITOR"])
+    AddTextEntry('PM_SCR_GAL', config["GALLERY"])
+end)
+
+
+

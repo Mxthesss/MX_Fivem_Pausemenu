@@ -10,4 +10,4 @@ Do not forget to add
 
 in `server.cfg` so that will make `MX_Fivem_Pausemenu` resource start automaticlly with The Server
 
-And then Boom! now you have your own Custom Discord Rich Precense for your FiveM Server!
+And then Boom!

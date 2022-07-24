@@ -48,5 +48,11 @@ Citizen.CreateThread(function()
     AddTextEntry('PM_SCR_GAL', config["GALLERY"])
 end)
 
+ReplaceHudColourWithRgba(
+        117,
+        21,32,43, --rgb
+        255 -- alpha
+)
+
 
 print('^5Made By Mxthess^7: ^1'..GetCurrentResourceName()..'^7 started ^2successfully^7...') 
